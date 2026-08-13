@@ -1,6 +1,6 @@
 {
   "name": "vercel-deployment-for-github-actions",
-  "version": "1.1.0",
+  "version": "1.2.2",
   "description": "Deploy your project to Vercel using GitHub Actions. Supports PR previews and GitHub deployments.",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,6 @@
     "start": "node dist/index.js",
     "build": "ncc build src/index.js -o dist"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EvanNotFound/vercel-deployment-for-github-actions.git"
@@ -24,10 +23,9 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/exec": "^1.1.1",
-    "@actions/github": "^4.0.0",
+    "@actions/github": "^8.0.1",
     "action-input-parser": "^1.2.38",
     "dotenv": "^9.0.2",
-    "got": "^11.8.3",
     "vercel": "^41.6.0"
   },
   "devDependencies": {
